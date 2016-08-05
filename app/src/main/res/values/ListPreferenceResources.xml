@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listOptions">
+        <item>Hasharon</item>
+        <item>Hadarom</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>hasharon</item>
+        <item>hadarom</item>
+    </string-array>
+</resources>

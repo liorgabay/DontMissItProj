@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.liorozit.dontmissitproj.MainActivity"
+    android:background="@drawable/wallpaper"
+    android:layoutDirection="ltr">
+
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layoutDirection="ltr">
+
+
+        <TableRow>
+        <TextView
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/hellotext"
+            android:layout_width="0dip"
+            android:layout_weight="1"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:text="Log Off"
+            android:id="@+id/logoffbutton"
+            android:onClick="LogOffOnClick"
+
+            android:layout_width="0dip"
+            android:layout_weight="1"/>
+
+        </TableRow>
+        <TableRow android:gravity="center_horizontal|center_vertical">
+
+            <ImageView
+
+                android:src="@drawable/logo"
+                android:layout_alignTop="@+id/tableRow"
+                android:layout_height="165dp"
+                android:padding="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"/>
+
+        </TableRow>
+        <TableRow android:layout_marginTop="10dp"
+            android:id="@+id/WakeMetr">
+
+            <Button
+                android:text="Wake Me Up!"
+                android:id="@+id/WakeMeButton"
+
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:onClick="WakeMeOnClick" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp">
+
+            <Button
+
+                android:text="My Settings"
+                android:id="@+id/SettingsButton"
+                android:onClick="PrefSettingsOnClick"
+                android:layout_width="0dip"
+                android:layout_weight="1"/>
+
+            <Button
+
+                android:text="show tariff reform"
+                android:id="@+id/TariffButton"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:onClick="ShowTariffOnClick" />
+
+        </TableRow>
+    <TableRow>
+        <WebView
+
+            android:layout_height="214dp"
+            android:id="@+id/TariffwebView"
+            android:layout_width="0dip"
+            android:layout_weight="1"/>
+    </TableRow>
+    </TableLayout>
+</RelativeLayout>

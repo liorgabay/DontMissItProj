@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layoutDirection="ltr">
+
+
+    <PreferenceCategory
+        android:summary="Vibration and Alarm sound"
+        android:title="Vibration and Alarm" >
+        <CheckBoxPreference android:title="vibration"
+            android:defaultValue="true"
+            android:summary="set up vibration"
+            android:key="one" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:summary="Personal Settings"
+        android:title="Personal Settings" >
+
+        <ListPreference
+            android:entries="@array/listOptions"
+            android:entryValues="@array/listValues"
+            android:key="three"
+            android:summary="choose bus driving region"
+            android:title="busses region" />
+
+        <EditTextPreference
+            android:key="four"
+            android:summary="Enter your new email:"
+            android:title="Edit your email" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
